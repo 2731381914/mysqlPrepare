@@ -2,10 +2,10 @@
 
 bool PrepareCreator::prepare(const char* sql) {
 
-    if (this->_stmt != nullptr) {
-        mysql_stmt_close(this->_stmt);
-        this->_stmt = nullptr;
-    }
+//     if (this->_stmt != nullptr) {
+//         mysql_stmt_close(this->_stmt);
+//         this->_stmt = nullptr;
+//     }
 
     this->_stmt = mysql_stmt_init(this->_connection);
     if (!this->_stmt) {
